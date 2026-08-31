@@ -1,0 +1,24 @@
+{
+    "name": "Sadanam",
+    "slug": "sadanam",
+    "version": "1.0.0",
+    "author": "Daesuite",
+
+    "fonts": [
+        {
+            "provider": "google",
+            "family": "Nunito Sans",
+            "weights": [100, 300, 400, 700]
+        },
+        {
+            "provider": "google",
+            "family": "Yrsa",
+            "weights": [ 300, 400, 500, 600, 700]
+        },
+        {
+            "provider": "google",
+            "family": "Charmonman",
+            "weights": [ 400, 700]
+        }
+    ]
+}

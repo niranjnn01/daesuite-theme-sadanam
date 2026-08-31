@@ -1,0 +1,51 @@
+:root[data-theme="sadanam"] {
+
+   --theme-name: 'sadanam';
+
+   --primary: oklch(0.69 0.065 322);
+   --primary-foreground: oklch(1 0 0);
+
+   --secondary: oklch(0.32 0.025 325);
+   --secondary-foreground: oklch(1 0 0);
+
+    --background: oklch(88.92% 0.0208 325.56);
+    --foreground: oklch(0.32 0.025 325);
+    --foreground-inverse: oklch(88.92% 0.0208 325.56);
+
+   --accent: oklch(0.58 0.08 25);
+   --accent-foreground: oklch(1 0 0);
+
+    --surface: oklch(96.63% 0.0068 355.68);
+    
+    --surface-subtle: oklch(0.975 0.018 65);
+    --surface-muted: oklch(0.95 0.02 65);
+    --surface-elevated: oklch(0.995 0.02 65);
+
+   --font-brand: "Charmonman";
+   --font-sans: "Nunito Sans";
+   --font-serif: "Yrsa";
+}
+
+.bg-floral-bottom-left {
+  /* Safely loads the asset path passed from the backend template */
+  background-image: var(--bg-flower);
+  background-repeat: no-repeat;
+  background-position: left 16px bottom 16px;
+  background-size: 60% auto;
+}
+
+@media (min-width: 640px) {
+  .bg-floral-bottom-left { background-size: 30% auto; }
+}
+@media (min-width: 768px) {
+  .bg-floral-bottom-left {
+    background-position: left 24px bottom 24px;
+    background-size: 20% auto;
+  }
+}
+@media (min-width: 1024px) {
+  .bg-floral-bottom-left { background-size: 15% auto; 
+   background-position: left 16px bottom 4px;
+}
+  
+}
