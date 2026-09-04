@@ -12,7 +12,7 @@
         <div class="mb-5">
             
             <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                Find answers to common questions about Sree Narayana English Medium School. 
+                Find answers to common questions about {{ $organization->title }}. 
                 Can't find what you're looking for? Feel free to contact us.
             </p>
         </div>
