@@ -6,11 +6,11 @@
 
     <x-system::container class="py-5">
         <p class="py-5 text-2xl">
-            Core theme about.blade.php
+            Theme about.blade.php
             
         </p>
         <p class="">
-            Overide using appropriate <b>about.blade.php</b> in theme
+            <b>about.blade.php</b> of the theme
         </p>
         
     </x-system::container>
