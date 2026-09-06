@@ -2,5 +2,8 @@
     "name": "daesuite/theme-sadanam",
     "description": "Sadanam theme for Daesuite",
     "type": "library",
-    "license": "proprietary"
+    "license": "proprietary",
+    "require": {
+        "daesuite/design-system": "^1.0"
+    }
 }

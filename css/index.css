@@ -1,51 +1,126 @@
+ /*
+|--------------------------------------------------------------------------
+| Sadanam Theme
+|--------------------------------------------------------------------------
+|
+| This file provides Sadanam-specific values for the Daesuite Design
+| System semantic tokens.
+|
+| The design system owns:
+|   - semantic token definitions
+|   - Tailwind token mappings
+|   - shared utilities
+|   - shared component behavior
+|
+| This theme owns:
+|   - visual values
+|   - typography choices
+|   - theme-specific utilities/components
+|
+|--------------------------------------------------------------------------
+*/
+
+@import 'tailwindcss';
+
+@import '../vendor/daesuite/design-system/css/index.css';
+
+@source '../views/**/*.blade.php';
+
+
 :root[data-theme="sadanam"] {
 
-   --theme-name: 'sadanam';
+    /* ==========================================================================
+       Theme Identity
+       ========================================================================== */
 
-   --primary: oklch(0.69 0.065 322);
-   --primary-foreground: oklch(1 0 0);
+    --ds-theme-name: 'sadanam';
 
-   --secondary: oklch(0.32 0.025 325);
-   --secondary-foreground: oklch(1 0 0);
 
-    --background: oklch(88.92% 0.0208 325.56);
-    --foreground: oklch(0.32 0.025 325);
-    --foreground-inverse: oklch(88.92% 0.0208 325.56);
+    /* ==========================================================================
+       Brand Colors
+       ========================================================================== */
 
-   --accent: oklch(0.58 0.08 25);
-   --accent-foreground: oklch(1 0 0);
+    --ds-primary: oklch(0.69 0.065 322);
+    --ds-primary-foreground: oklch(1 0 0);
 
-    --surface: oklch(96.63% 0.0068 355.68);
-    
-    --surface-subtle: oklch(0.975 0.018 65);
-    --surface-muted: oklch(0.95 0.02 65);
-    --surface-elevated: oklch(0.995 0.02 65);
+    --ds-secondary: oklch(0.32 0.025 325);
+    --ds-secondary-foreground: oklch(1 0 0);
 
-   --font-brand: "Charmonman";
-   --font-sans: "Nunito Sans";
-   --font-serif: "Yrsa";
+    --ds-accent: oklch(0.58 0.08 25);
+    --ds-accent-foreground: oklch(1 0 0);
+
+
+    /* ==========================================================================
+       Application Surfaces
+       ========================================================================== */
+
+    --ds-background: oklch(88.92% 0.0208 325.56);
+    --ds-foreground: oklch(0.32 0.025 325);
+    --ds-foreground-inverse: oklch(88.92% 0.0208 325.56);
+
+    --ds-surface: oklch(96.63% 0.0068 355.68);
+
+    --ds-surface-subtle: oklch(0.975 0.018 65);
+    --ds-surface-muted: oklch(0.95 0.02 65);
+    --ds-surface-elevated: oklch(0.995 0.02 65);
+
+
+    /* ==========================================================================
+       Typography
+       ========================================================================== */
+
+    --ds-font-content: "Nunito Sans";
+    --ds-font-brand: "Charmonman";
+    --ds-font-heading: "Yrsa";
+
+
+    /* ==========================================================================
+       Theme-specific Assets
+       ========================================================================== */
+
+    /*
+     * The actual value can be supplied by the Blade/application layer.
+     *
+     * Example:
+     *
+     * style="--bg-flower: url(...)"
+     */
 }
+
+
+/* ==========================================================================
+   Theme-specific Utility
+   ========================================================================== */
 
 .bg-floral-bottom-left {
-  /* Safely loads the asset path passed from the backend template */
-  background-image: var(--bg-flower);
-  background-repeat: no-repeat;
-  background-position: left 16px bottom 16px;
-  background-size: 60% auto;
+    background-image: var(--bg-flower);
+    background-repeat: no-repeat;
+    background-position: left 16px bottom 16px;
+    background-size: 60% auto;
 }
 
+
 @media (min-width: 640px) {
-  .bg-floral-bottom-left { background-size: 30% auto; }
+
+    .bg-floral-bottom-left {
+        background-size: 30% auto;
+    }
 }
+
+
 @media (min-width: 768px) {
-  .bg-floral-bottom-left {
-    background-position: left 24px bottom 24px;
-    background-size: 20% auto;
-  }
+
+    .bg-floral-bottom-left {
+        background-position: left 24px bottom 24px;
+        background-size: 20% auto;
+    }
 }
+
+
 @media (min-width: 1024px) {
-  .bg-floral-bottom-left { background-size: 15% auto; 
-   background-position: left 16px bottom 4px;
-}
-  
+
+    .bg-floral-bottom-left {
+        background-size: 15% auto;
+        background-position: left 16px bottom 4px;
+    }
 }

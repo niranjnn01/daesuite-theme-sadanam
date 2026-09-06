@@ -1,0 +1,172 @@
+/* daesuite-design-system/css/core.css */
+
+/*
+|--------------------------------------------------------------------------
+| Daesuite Design System — Semantic Tokens
+|--------------------------------------------------------------------------
+|
+| This file defines the semantic design language of Daesuite.
+|
+| Themes should override these --ds-* variables.
+|
+| Tailwind-specific variables such as --color-primary or --font-sans
+| belong in index.css and should not be defined here.
+|
+*/
+
+:root {
+
+    /* ==========================================================================
+       Brand Colors
+       ========================================================================== */
+
+    --ds-primary: oklch(0.5859 0.158 244.67);
+    --ds-primary-foreground: oklch(1 0 0);
+
+    --ds-secondary: oklch(0.556 0 0);
+    --ds-secondary-foreground: oklch(1 0 0);
+
+    --ds-accent: oklch(0.646 0.222 41.116);
+    --ds-accent-foreground: oklch(1 0 0);
+
+
+    /* ==========================================================================
+       Feedback Colors
+       ========================================================================== */
+
+    --ds-success: oklch(0.632 0.186 147.37);
+    --ds-success-foreground: oklch(1 0 0);
+
+    --ds-warning: oklch(0.756 0.160 74.11);
+    --ds-warning-foreground: oklch(0.145 0 0);
+
+    --ds-danger: oklch(0.583 0.239 28.48);
+    --ds-danger-foreground: oklch(1 0 0);
+
+    --ds-info: oklch(0.614 0.116 224.64);
+    --ds-info-foreground: oklch(1 0 0);
+
+
+    /* ==========================================================================
+       Generic UI
+       ========================================================================== */
+
+    --ds-muted: oklch(0.97 0 0);
+    --ds-muted-foreground: oklch(0.45 0 0);
+
+    --ds-border: oklch(0.922 0 0);
+
+    --ds-ring: var(--ds-primary);
+
+
+    /* ==========================================================================
+       Disabled State
+       ========================================================================== */
+
+    --ds-disabled: var(--ds-muted);
+    --ds-disabled-foreground: var(--ds-muted-foreground);
+
+
+    /* ==========================================================================
+       Application Surfaces
+       ========================================================================== */
+
+    --ds-background: oklch(0.985 0 0);
+    --ds-foreground: oklch(0.145 0 0);
+    --ds-foreground-inverse: oklch(1 0 0);
+
+    --ds-surface: oklch(1 0 0);
+    --ds-surface-foreground: var(--ds-foreground);
+
+    --ds-surface-subtle: oklch(0.985 0 0);
+    --ds-surface-muted: oklch(0.97 0 0);
+    --ds-surface-elevated: oklch(1 0 0);
+
+    --ds-card: var(--ds-surface);
+    --ds-card-foreground: var(--ds-surface-foreground);
+
+
+    /* ==========================================================================
+       Form Surfaces
+       ========================================================================== */
+
+    --ds-form-surface: oklch(1 0 0 / 0.82);
+    --ds-form-surface-foreground: oklch(0.145 0 0);
+    --ds-form-surface-border: oklch(1 0 0 / 0.55);
+
+
+    /* ==========================================================================
+       Form Controls
+       ========================================================================== */
+
+    --ds-control: oklch(1 0 0);
+    --ds-control-foreground: var(--ds-foreground);
+    --ds-control-border: var(--ds-border);
+    --ds-control-placeholder: var(--ds-muted-foreground);
+    --ds-control-focus: var(--ds-primary);
+
+
+    /* ==========================================================================
+       Disabled Form Controls
+       ========================================================================== */
+
+    --ds-control-disabled: var(--ds-disabled);
+    --ds-control-disabled-foreground: var(--ds-disabled-foreground);
+
+
+    /* ==========================================================================
+       Content
+       ========================================================================== */
+
+    --ds-heading: var(--ds-foreground);
+    --ds-body: var(--ds-foreground);
+    --ds-caption: var(--ds-muted-foreground);
+
+    --ds-link: var(--ds-primary);
+    --ds-link-hover: color-mix(
+        in oklch,
+        var(--ds-primary) 60%,
+        black
+    );
+
+
+    /* ==========================================================================
+       Form / Input Semantic Tokens
+       ========================================================================== */
+
+    --ds-input: var(--ds-control);
+
+
+    /* ==========================================================================
+       Typography
+       ========================================================================== */
+
+    /*
+     * These are semantic font roles.
+     *
+     * A theme can override these with actual font families.
+     */
+
+    --ds-font-content: var(--ds-font-default);
+    --ds-font-heading: var(--ds-font-default);
+    --ds-font-brand: var(--ds-font-default);
+
+    /*
+     * Base/default font family.
+     *
+     * This deliberately uses a system stack so the design system has a
+     * sensible fallback even when a theme does not provide fonts.
+     */
+
+    --ds-font-default:
+        ui-sans-serif,
+        system-ui,
+        sans-serif;
+
+
+    /* ==========================================================================
+       Radius
+       ========================================================================== */
+
+    --ds-radius: 0.525rem;
+}

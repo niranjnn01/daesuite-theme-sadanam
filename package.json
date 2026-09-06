@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "scripts": {
+        "build": "npx @tailwindcss/cli -i ./css/index.css -o ./css/dist/theme.css --minify",
+        "dev": "vite"
+    }
+}
