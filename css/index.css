@@ -20,11 +20,6 @@
 |--------------------------------------------------------------------------
 */
 
-@import 'tailwindcss';
-
-@import '../vendor/daesuite/design-system/css/index.css';
-
-@source '../views/**/*.blade.php';
 
 
 :root[data-theme="sadanam"] {
