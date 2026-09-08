@@ -2,6 +2,9 @@
 
 @section('content')
 
+@php
+$main_branch = array_shift($branches);
+@endphp
 
     <x-system::layout.container class=" my-10 ">
 
@@ -15,7 +18,7 @@
             <div class="flex-1">
                 
 
-                <x-cards.map class="flex-1" :title="$branches[0]['title']">
+                <x-cards.map class="flex-1" :title="$main_branch['title']">
                             
                     <x-slot:iframe>
                         <div class="mb-4">
@@ -80,8 +83,9 @@
                         <div>
                             <h4 class="text-xl font-bold">Address</h4>
                             <p class=" text-xl">
-                                19 Street, X Cross<br>
-                                Lamba Beta, way, Illonios
+                                {{ $branch['address']['address_line_1'] }}, {{ $branch['address']['address_line_2'] }}<br>
+                                {{ $branch['address']['city'] }}, {{ $branch['address']['state'] }}
+                                {{ $branch['address']['postal_code'] }}
                             </p>
                         </div>
 
