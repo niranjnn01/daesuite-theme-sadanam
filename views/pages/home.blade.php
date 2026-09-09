@@ -20,7 +20,7 @@
         </x-slot:actions>
 
         <x-slot:form>
-            <x-forms.enquiry />
+            <x-forms.admissoin-enquiry />
         </x-slot:form>
 
     </x-heros.lead-capture>
