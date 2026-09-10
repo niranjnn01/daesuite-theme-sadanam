@@ -12,21 +12,8 @@
     <ul class="flex flex-col space-y-4">
         <li><a href="/" @click="mobileMenuOpen = false" class="block text-lg text secondary/80 hover:text-secondary transition-colors py-2">Home</a></li>
         <li><a href="/about" @click="mobileMenuOpen = false" class="block text-lg text secondary/80 hover:text-secondary transition-colors py-2">About</a></li>
-        <li>
-            <button
-                @click="mobileMenuOpen = false; contactModalOpen = true"
-                class="text-lg text secondary/80 hover:text-secondary transition-colors hover:cursor-pointer py-2 text-left w-full">
-                Contact
-            </button>
-        </li>
-        <li>
-            <button
-                @click="mobileMenuOpen = false; admissionModalOpen = true"
-                class="text-lg text secondary/80 hover:text-secondary transition-colors hover:cursor-pointer py-2 text-left w-full">
-                Admisssion
-            </button>
-        </li>
-        <li><a href="/events" @click="mobileMenuOpen = false" class="block text-lg hover:text-primary transition-colors py-2">Events</a></li>
+        <li><a href="/branches" @click="mobileMenuOpen = false" class="block text-lg text secondary/80 hover:text-secondary transition-colors py-2">Branches</a></li>
         <li><a href="/gallery" @click="mobileMenuOpen = false" class="block text-lg text secondary/80 hover:text-secondary transition-colors py-2">Gallery</a></li>
+        <li><a href="/contact" @click="mobileMenuOpen = false" class="block text-lg text secondary/80 hover:text-secondary transition-colors py-2">Contact</a></li>
     </ul>
 </nav>
