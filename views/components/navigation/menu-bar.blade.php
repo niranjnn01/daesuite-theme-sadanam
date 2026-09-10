@@ -1,18 +1,19 @@
 <!-- Desktop Navigation -->
 <nav class="hidden md:block">
     <ul class="flex space-x-8  text-lg">
-        <li><a href="/" class=" hover:text-primary transition-colors">Home</a></li>
-        <li><a href="/about" class=" hover:text-primary transition-colors">About</a></li>
-        <li><a href="/branches" class=" hover:text-primary transition-colors">Branches</a></li>
-        <li><a href="/gallery" class=" hover:text-primary transition-colors">Gallery</a></li>
-        <li><a href="/contact" class=" hover:text-primary transition-colors">Contact</a></li>
+        
+        <li><a href="/" class="cursor-pointer hover:text-primary hover:bg-secondary transition-colors">Home R</a></li>
+        <li><a href="/about" class="cursor-pointer hover:text-primary hover:bg-secondary transition-colors">About</a></li>
+        <li><a href="/branches" class="cursor-pointer hover:text-primary hover:bg-secondary transition-colors">Branches</a></li>
+        <li><a href="/gallery" class="cursor-pointer hover:text-primary hover:bg-secondary transition-colors">Gallery</a></li>
+        <li><a href="/contact" class="cursor-pointer hover:text-primary hover:bg-secondary transition-colors">Contact</a></li>
     </ul>
 </nav>
 
 <!-- Mobile Hamburger Button -->
 <button
     @click="mobileMenuOpen = !mobileMenuOpen"
-    class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary"
+    class="cursor-point md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary"
     aria-label="Toggle menu"
 >
     <svg x-show="!mobileMenuOpen" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
