@@ -31,7 +31,7 @@ $main_branch = array_shift($branches);
                         <div class="flex flex-col gap-3">
                             
                             <div>
-                                <h4 class="text-lg font-bold">Phone ----</h4>
+                                <h4 class="text-lg font-bold">Phone</h4>
                                 <p class="text-xl">+91 9898 9898 98</p>
                             </div>
 
