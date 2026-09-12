@@ -2,7 +2,7 @@
 <nav class="hidden md:block">
     <ul class="flex space-x-8  text-lg">
         
-        <li><a href="/" class="hover:bg-secondary hover:text-primary hover:bg-secondary transition-colors">Home R</a></li>
+        <li><a href="/" class="hover:bg-secondary hover:text-primary hover:bg-secondary transition-colors">Home</a></li>
         <li><a href="/about" class="hover:bg-secondary hover:text-primary hover:bg-secondary transition-colors">About</a></li>
         <li><a href="/branches" class="hover:bg-secondary hover:text-primary hover:bg-secondary transition-colors">Branches</a></li>
         <li><a href="/gallery" class="hover:bg-secondary hover:text-primary hover:bg-secondary transition-colors">Gallery</a></li>
