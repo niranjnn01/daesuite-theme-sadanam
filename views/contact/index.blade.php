@@ -38,9 +38,9 @@ $main_branch = array_shift($branches);
                             <div>
                                 <h4 class="text-xl font-bold">Address</h4>
                                 <p class=" text-xl">
-                                    {{ $branch['address']['address_line_1'] }}, {{ $branch['address']['address_line_2'] }}<br>
-                                    {{ $branch['address']['city'] }}, {{ $branch['address']['state'] }}
-                                    {{ $branch['address']['postal_code'] }}
+                                    {{ $main_branch['address']['address_line_1'] }}, {{ $main_branch['address']['address_line_2'] }}<br>
+                                    {{ $main_branch['address']['city'] }}, {{ $main_branch['address']['state'] }}
+                                    {{ $main_branch['address']['postal_code'] }}
                                 </p>
                             </div>
 
